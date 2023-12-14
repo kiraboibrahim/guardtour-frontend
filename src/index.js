@@ -1,8 +1,15 @@
+import './index.css';
+import '@fontsource/inter';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import axios from 'axios';
+import App from './components/App/App';
+import { addAuthorizationInterceptor } from './components/User/User';
 import reportWebVitals from './reportWebVitals';
+import { BASE_URL } from './services/config';
+
+axios.defaults.baseURL = BASE_URL;
+axios.interceptors.request.use(addAuthorizationInterceptor);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
