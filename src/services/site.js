@@ -649,7 +649,7 @@ class SiteService {
         switch(user.role) {
             case SUPER_ADMIN_ROLE:
                 const superAdminSitesUrl = SITES_URL;
-                return await axios.get(superAdminSitesUrl).data.data;
+                return (await axios.get(superAdminSitesUrl)).data.data;
             case COMPANY_ADMIN_ROLE:
                 const companyAdminSitesUrl= `${COMPANIES_URL}/${user.companyId}/sites`;
                 return (await axios.get(companyAdminSitesUrl)).data.data;
