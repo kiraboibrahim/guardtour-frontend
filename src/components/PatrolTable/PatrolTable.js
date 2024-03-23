@@ -29,31 +29,37 @@ export default function PatrolTable({ patrols }) {
             <th style={{ width: 140, padding: "12px 6px" }}>Site</th>
             <th style={{ width: 140, padding: "12px 6px" }}>Date</th>
             <th style={{ width: 140, padding: "12px 6px" }}>Submitted at</th>
-            <th style={{ width: 140, padding: "12px 6px" }}>Security Guard</th>
+            <th style={{ width: 140, padding: "12px 6px" }}>Guard ID</th>
+            <th style={{ width: 140, padding: "12px 6px" }}>Guard Name</th>
           </tr>
         </thead>
         <tbody>
-          {patrols
-            .filter(({ securityGuard }) => securityGuard !== null)
-            .map((patrol) => (
-              <tr key={patrol.id}>
-                <td>
-                  <Typography level="body-xs">{patrol.site.name}</Typography>
-                </td>
-                <td>
-                  <Typography level="body-xs">{patrol.date}</Typography>
-                </td>
-                <td>
-                  <Typography level="body-xs">{patrol.startTime}</Typography>
-                </td>
-                <td>
-                  <Typography level="body-xs">
-                    {patrol.securityGuard.firstName}{" "}
-                    {patrol.securityGuard.lastName}
-                  </Typography>
-                </td>
-              </tr>
-            ))}
+          {patrols.map((patrol) => (
+            <tr key={patrol.id}>
+              <td>
+                <Typography level="body-xs">{patrol.site.name}</Typography>
+              </td>
+              <td>
+                <Typography level="body-xs">{patrol.date}</Typography>
+              </td>
+              <td>
+                <Typography level="body-xs">{patrol.startTime}</Typography>
+              </td>
+              <td>
+                <Typography level="body-xs">
+                  {patrol.securityGuardUniqueId ||
+                    patrol.securityGuard.uniqueId}
+                </Typography>
+              </td>
+              <td>
+                <Typography level="body-xs">
+                  {patrol?.securityGuard?.firstName}{" "}
+                  {patrol?.securityGuard?.lastName}
+                  {!patrol.securityGuard && "-"}
+                </Typography>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </Sheet>

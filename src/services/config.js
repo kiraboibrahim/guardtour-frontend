@@ -1,4 +1,4 @@
-export const DEBUG = false;
+export const DEBUG = true;
 export const BASE_URL = DEBUG
   ? "http://localhost:3000"
   : "https://guardtour.legitsystemsug.com";

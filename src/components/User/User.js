@@ -2,7 +2,6 @@ import { createContext } from "react";
 import { ACCESS_TOKEN_KEY_NAME } from "./constants";
 import { LOGIN_URL, SITES_URL } from "../../services/config";
 import { jwtDecode } from "jwt-decode";
-import { ExpandRounded } from "@mui/icons-material";
 
 export const AnonymousUser = {
   isAuthenticated: false,
