@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/guardtour-frontend/static/css/main.022908ff.css",
-    "main.js": "/guardtour-frontend/static/js/main.fa5e96b3.js",
+    "main.js": "/guardtour-frontend/static/js/main.d8d728f8.js",
     "static/js/787.9e9f4ffd.chunk.js": "/guardtour-frontend/static/js/787.9e9f4ffd.chunk.js",
     "static/media/inter-latin-ext-400-normal.woff": "/guardtour-frontend/static/media/inter-latin-ext-400-normal.40b3b0d5e09a90fb6e3e.woff",
     "static/media/inter-latin-ext-400-normal.woff2": "/guardtour-frontend/static/media/inter-latin-ext-400-normal.0f9e8d4e940df8f6edfe.woff2",
@@ -19,11 +19,11 @@
     "static/media/inter-vietnamese-400-normal.woff2": "/guardtour-frontend/static/media/inter-vietnamese-400-normal.5952d3d3c5df5a2f8e09.woff2",
     "index.html": "/guardtour-frontend/index.html",
     "main.022908ff.css.map": "/guardtour-frontend/static/css/main.022908ff.css.map",
-    "main.fa5e96b3.js.map": "/guardtour-frontend/static/js/main.fa5e96b3.js.map",
+    "main.d8d728f8.js.map": "/guardtour-frontend/static/js/main.d8d728f8.js.map",
     "787.9e9f4ffd.chunk.js.map": "/guardtour-frontend/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.022908ff.css",
-    "static/js/main.fa5e96b3.js"
+    "static/js/main.d8d728f8.js"
   ]
 }
